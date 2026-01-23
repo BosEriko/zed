@@ -1,9 +1,14 @@
 [
   {
-    "context": "Workspace",
+    "context": "!Editor && !Terminal && !Search",
     "bindings": {
-      "ctrl-\\": "workspace::ToggleRightDock",
-      "ctrl-z": "workspace::ToggleBottomDock"
+      "ctrl-\\": "workspace::ToggleRightDock"
+    }
+  },
+  {
+    "context": "Editor || Terminal || Search",
+    "bindings": {
+      "ctrl-\\": "project_panel::ToggleFocus"
     }
   }
 ]
