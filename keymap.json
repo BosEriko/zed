@@ -54,7 +54,7 @@
   // [ctrl+k] Editor: Open Keyboard Cheat Sheet                                         //
   // ================================================================================== //
   {
-    "context": "((vim_mode == normal || vim_mode == visual) || vim_mode == operator)",
+    "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
     "bindings": {
       "ctrl-k": "zed::OpenKeymapFile"
     }
@@ -63,7 +63,7 @@
   // [ctrl+h] Previous Tab on Editor                                                    //
   // ================================================================================== //
   {
-    "context": "((vim_mode == normal || vim_mode == visual) || vim_mode == operator)",
+    "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
     "bindings": {
       "ctrl-h": "pane::ActivatePreviousItem"
     }
@@ -72,7 +72,7 @@
   // [ctrl+l] Next Tab on Editor                                                        //
   // ================================================================================== //
   {
-    "context": "((vim_mode == normal || vim_mode == visual) || vim_mode == operator)",
+    "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
     "bindings": {
       "ctrl-l": "pane::ActivateNextItem"
     }
@@ -90,7 +90,7 @@
   // [ctrl+q] Close all Editors                                                         //
   // ================================================================================== //
   {
-    "context": "((vim_mode == normal || vim_mode == visual) || vim_mode == operator)",
+    "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
     "bindings": {
       "ctrl-q": "pane::CloseAllItems"
     }
@@ -99,7 +99,7 @@
   // [ctrl+b] Copy Relative Path                                                        //
   // ================================================================================== //
   {
-    "context": "((vim_mode == normal || vim_mode == visual) || vim_mode == operator)",
+    "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
     "bindings": {
       "ctrl-b": "editor::CopyRelativePath"
     }
@@ -108,7 +108,7 @@
   // [ctrl+p] Search Project                                                            //
   // ================================================================================== //
   {
-    "context": "((vim_mode == normal || vim_mode == visual) || vim_mode == operator)",
+    "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
     "bindings": {
       "ctrl-p": "file_finder::Toggle"
     }
@@ -117,7 +117,7 @@
   // [ctrl+f] Search Workspace                                                          //
   // ================================================================================== //
   {
-    "context": "((vim_mode == normal || vim_mode == visual) || vim_mode == operator)",
+    "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
     "bindings": {
       "ctrl-f": "pane::DeploySearch"
     }
