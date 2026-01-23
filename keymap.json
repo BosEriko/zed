@@ -11,8 +11,6 @@
 // [ctrl+f] Search Workspace                                                            //
 // [ctrl+j] Go down in search workspace, suggestion, terminal pane or quick open        //
 // [ctrl+k] Go up in search workspace, suggestion, terminal pane or quick open          //
-// [ctrl+d] Terminal: Scroll Down                                                       //
-// [ctrl+u] Terminal: Scroll Up                                                         //
 // [ctrl+n] Create new Terminal or Editor                                               //
 // [ctrl+w] Close Terminal or Editor                                                    //
 // [ctrl+g] Search and Replace                                                          //
