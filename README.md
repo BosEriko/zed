@@ -11,3 +11,7 @@ Make sure to remove or move your current `Zed` directory
 ```sh
 git clone https://github.com/BosEriko/zed.git ~/.config/zed
 ```
+
+## Install the Extensions
+1. [Aura Theme](https://zed.dev/extensions/aura-theme)
+2. [Charmed Icons](https://zed.dev/extensions/charmed-icons)

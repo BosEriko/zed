@@ -1,4 +1,6 @@
 {
+  "icon_theme": "Warm Charmed Icons",
+  "theme": "Aura Dark",
   "title_bar": {
     "show_sign_in": false
   },
