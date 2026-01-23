@@ -192,7 +192,7 @@
   // [a] File Explorer: Create File                                                     //
   // ================================================================================== //
   {
-    "context": "ProjectPanel",
+    "context": "ProjectPanel && !editing",
     "bindings": {
       "a": "project_panel::NewFile"
     }
@@ -201,7 +201,7 @@
   // [y] File Explorer: Copy File                                                       //
   // ================================================================================== //
   {
-    "context": "ProjectPanel",
+    "context": "ProjectPanel && !editing",
     "bindings": {
       "y": "project_panel::Copy"
     }
@@ -210,7 +210,7 @@
   // [m] File Explorer: Move File                                                       //
   // ================================================================================== //
   {
-    "context": "ProjectPanel",
+    "context": "ProjectPanel && !editing",
     "bindings": {
       "m": "project_panel::Cut"
     }
@@ -219,7 +219,7 @@
   // [p] File Explorer: Paste File                                                      //
   // ================================================================================== //
   {
-    "context": "ProjectPanel",
+    "context": "ProjectPanel && !editing",
     "bindings": {
       "p": "project_panel::Paste"
     }
@@ -228,7 +228,7 @@
   // [r] File Explorer: Rename File                                                     //
   // ================================================================================== //
   {
-    "context": "ProjectPanel",
+    "context": "ProjectPanel && !editing",
     "bindings": {
       "r": "project_panel::Rename"
     }
@@ -237,7 +237,7 @@
   // [d] File Explorer: Delete File                                                     //
   // ================================================================================== //
   {
-    "context": "ProjectPanel",
+    "context": "ProjectPanel && !editing",
     "bindings": {
       "d": "project_panel::Delete"
     }
@@ -246,7 +246,7 @@
   // [w] File Explorer: Remove Folder from Workspace                                      //
   // ================================================================================== //
   {
-    "context": "ProjectPanel",
+    "context": "ProjectPanel && !editing",
     "bindings": {
       "w": "project_panel::Delete"
     }
