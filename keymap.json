@@ -8,11 +8,12 @@
 // [ctrl+s] Save File                                                                   //
 // [ctrl+q] Close all Editors                                                           //
 // [ctrl+b] Copy Relative Path                                                          //
+// [ctrl+p] Search Project                                                              //
 // [ctrl+f] Search Workspace                                                            //
 // [ctrl+j] Go down in search workspace, suggestion, terminal pane or quick open        //
 // [ctrl+k] Go up in search workspace, suggestion, terminal pane or quick open          //
-// [ctrl+n] Create new Terminal or Editor                                               //
-// [ctrl+w] Close Terminal or Editor                                                    //
+// [ctrl+n] Create Editor                                                               //
+// [ctrl+w] Close Editor                                                                //
 // [ctrl+g] Search and Replace                                                          //
 // [ctrl+c] Toggle Comment                                                              //
 // [a] File Explorer: Create File                                                       //
@@ -101,6 +102,15 @@
     "context": "((vim_mode == normal || vim_mode == visual) || vim_mode == operator)",
     "bindings": {
       "ctrl-b": "editor::CopyRelativePath"
+    }
+  },
+  // ================================================================================== //
+  // [ctrl+p] Search Project                                                            //
+  // ================================================================================== //
+  {
+    "context": "((vim_mode == normal || vim_mode == visual) || vim_mode == operator)",
+    "bindings": {
+      "ctrl-p": "file_finder::Toggle"
     }
   }
 ]
