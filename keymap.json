@@ -198,7 +198,7 @@
   // [a] File Explorer: Create File                                                     //
   // ================================================================================== //
   {
-    "context": "ProjectPanel && !editing",
+    "context": "ProjectPanel && not_editing",
     "bindings": {
       "a": "project_panel::NewFile"
     }
@@ -207,7 +207,7 @@
   // [y] File Explorer: Copy File                                                       //
   // ================================================================================== //
   {
-    "context": "ProjectPanel && !editing",
+    "context": "ProjectPanel && not_editing",
     "bindings": {
       "y": "project_panel::Copy"
     }
@@ -216,7 +216,7 @@
   // [m] File Explorer: Move File                                                       //
   // ================================================================================== //
   {
-    "context": "ProjectPanel && !editing",
+    "context": "ProjectPanel && not_editing",
     "bindings": {
       "m": "project_panel::Cut"
     }
@@ -225,7 +225,7 @@
   // [p] File Explorer: Paste File                                                      //
   // ================================================================================== //
   {
-    "context": "ProjectPanel && !editing",
+    "context": "ProjectPanel && not_editing",
     "bindings": {
       "p": "project_panel::Paste"
     }
@@ -234,7 +234,7 @@
   // [r] File Explorer: Rename File                                                     //
   // ================================================================================== //
   {
-    "context": "ProjectPanel && !editing",
+    "context": "ProjectPanel && not_editing",
     "bindings": {
       "r": "project_panel::Rename"
     }
@@ -243,7 +243,7 @@
   // [d] File Explorer: Delete File                                                     //
   // ================================================================================== //
   {
-    "context": "ProjectPanel && !editing",
+    "context": "ProjectPanel && not_editing",
     "bindings": {
       "d": "project_panel::Delete"
     }
@@ -252,7 +252,7 @@
   // [w] File Explorer: Remove Folder from Workspace                                    //
   // ================================================================================== //
   {
-    "context": "ProjectPanel && !editing",
+    "context": "ProjectPanel && not_editing",
     "bindings": {
       "w": "project_panel::Delete"
     }
@@ -275,4 +275,22 @@
       "space i": "editor::Hover"
     }
   },
+  // ================================================================================== //
+  // [<space> s a] Sort lines: Ascending                                                //
+  // ================================================================================== //
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "space s a": ["workspace::SendKeystrokes", ": !sort space - n space - k space 2 enter"]
+    }
+  },
+  // ================================================================================== //
+  // [<space> s d] Sort lines: Descending                                               //
+  // ================================================================================== //
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "space s d": ["workspace::SendKeystrokes", ": !sort space - nr space - k space 2 enter"]
+    }
+  }
 ]
