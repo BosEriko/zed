@@ -36,6 +36,7 @@
     "show_nav_history_buttons": false,
   },
   "toolbar": {
+    "breadcrumbs": false,
     "quick_actions": false,
   },
   "status_bar": {
