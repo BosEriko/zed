@@ -70,4 +70,10 @@
   "vim_mode": true,
   "relative_line_numbers": "enabled",
   "disable_ai": true,
+  "scrollbar": {
+    "show": "never"
+  },
+  "indent_guides": {
+    "enabled": false,
+  }
 }
