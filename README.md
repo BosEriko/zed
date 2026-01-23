@@ -5,3 +5,9 @@ Download [Brew](https://github.com/BosEriko/brew) as your package manager then i
 ```sh
 brew install --cask zed
 ```
+
+## Install the config
+Make sure to remove or move your current `zed` directory
+```sh
+git clone https://github.com/BosEriko/zed.git ~/.config/zed
+```
