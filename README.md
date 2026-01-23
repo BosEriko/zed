@@ -7,7 +7,7 @@ brew install --cask zed
 ```
 
 ## Install the config
-Make sure to remove or move your current `zed` directory
+Make sure to remove or move your current `Zed` directory
 ```sh
 git clone https://github.com/BosEriko/zed.git ~/.config/zed
 ```
