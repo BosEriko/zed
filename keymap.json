@@ -10,11 +10,11 @@
 // [ctrl+b] Copy Relative Path                                                          //
 // [ctrl+p] Search Project                                                              //
 // [ctrl+f] Search Workspace                                                            //
+// [ctrl+g] Search Workspace: Toggle Replace                                            //
 // [ctrl+j] Go down in search page, command palette or file finder                      //
 // [ctrl+k] Go up in search page, command palette or file finder                        //
 // [ctrl+n] Create Editor                                                               //
 // [ctrl+w] Close Editor                                                                //
-// [ctrl+g] Search and Replace                                                          //
 // [ctrl+c] Toggle Comment                                                              //
 // [a] File Explorer: Create File                                                       //
 // [y] File Explorer: Copy File                                                         //
@@ -123,6 +123,15 @@
     }
   },
   // ================================================================================== //
+  // [ctrl+g] Search Workspace: Toggle Replace                                          //
+  // ================================================================================== //
+  {
+    "context": "multibuffer || ProjectSearchBar",
+    "bindings": {
+      "ctrl-g": "search::ToggleReplace"
+    }
+  },
+  // ================================================================================== //
   // [ctrl+j] Go down in search page, command palette or file finder                    //
   // ================================================================================== //
   {
@@ -168,6 +177,15 @@
     "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
     "bindings": {
       "ctrl-w": "pane::CloseActiveItem"
+    }
+  },
+  // ================================================================================== //
+  // [ctrl+c] Toggle Comment                                                            //
+  // ================================================================================== //
+  {
+    "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
+    "bindings": {
+      "ctrl-c": "editor::ToggleComments"
     }
   }
 ]
