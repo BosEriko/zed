@@ -1,6 +1,30 @@
 // ================================== LIST OF KEYS ==================================== //
 //                                                                                      //
-// [ctrl+\] Open Explorer                                                               //
+// [ctrl+shift+\] View: Hide Editor Tabs                                                //
+// [ctrl+\] Open Explorer                                                               //--
+// [ctrl+k] Editor: Open Keyboard Cheat Sheet                                           //
+// [ctrl+h] Previous Tab on Editor                                                      //
+// [ctrl+l] Next Tab on Editor                                                          //
+// [ctrl+z] Toggle Full Screen Terminal                                                 //
+// [ctrl+s] Save File                                                                   //
+// [ctrl+q] Close all Editors or Open Folder                                            //
+// [ctrl+b] Copy Relative Path                                                          //
+// [ctrl+f] Search Workspace                                                            //
+// [ctrl+j] Go down in search workspace, suggestion, terminal pane or quick open        //
+// [ctrl+k] Go up in search workspace, suggestion, terminal pane or quick open          //
+// [ctrl+d] Terminal: Scroll Down                                                       //
+// [ctrl+u] Terminal: Scroll Up                                                         //
+// [ctrl+n] Create new Terminal or Editor                                               //
+// [ctrl+w] Close Terminal or Editor                                                    //
+// [ctrl+g] Search and Replace                                                          //
+// [ctrl+c] Toggle Comment                                                              //
+// [a] File Explorer: Create File                                                       //
+// [y] File Explorer: Copy File                                                         //
+// [m] File Explorer: Move File                                                         //
+// [p] File Explorer: Paste File                                                        //
+// [r] File Explorer: Rename File                                                       //
+// [d] File Explorer: Delete File                                                       //
+// [w] File Explorer: Remove Folder from Workspace                                      //
 //                                                                                      //
 // ==================================================================================== //
 [
