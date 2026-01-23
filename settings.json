@@ -1,4 +1,7 @@
 {
+  "title_bar": {
+    "show_sign_in": false
+  },
   "disable_ai": true,
   "relative_line_numbers": "enabled",
   "tab_bar": {
