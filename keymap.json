@@ -100,6 +100,7 @@
   // [ctrl+b] Copy Relative Path                                                        //
   // ================================================================================== //
   {
+    "context": "((vim_mode == normal || vim_mode == visual) || vim_mode == operator)",
     "bindings": {
       "ctrl-b": "editor::CopyRelativePath"
     }
