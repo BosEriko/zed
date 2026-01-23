@@ -27,9 +27,7 @@
 // [<space> i] Show tooltip hover message                                               //
 // [<space> s a] Sort lines: Ascending                                                  //
 // [<space> s d] Sort lines: Descending                                                 //
-// [<space> t s] Toggle settings: Status Wrap                                           //
 // [<space> t w] Toggle settings: Text Wrap                                             //
-// [<space> t l] Toggle settings: Hidden Characters                                     //
 //                                                                                      //
 // ==================================================================================== //
 [
@@ -291,6 +289,15 @@
     "context": "vim_mode == visual",
     "bindings": {
       "space s d": ["workspace::SendKeystrokes", ": !sort space - nr space - k space 2 enter"]
+    }
+  },
+  // ================================================================================== //
+  // [<space> t w] Toggle settings: Text Wrap                                           //
+  // ================================================================================== //
+  {
+    "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
+    "bindings": {
+      "space t w": "editor::ToggleSoftWrap"
     }
   }
 ]
