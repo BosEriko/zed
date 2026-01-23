@@ -10,8 +10,8 @@
 // [ctrl+b] Copy Relative Path                                                          //
 // [ctrl+p] Search Project                                                              //
 // [ctrl+f] Search Workspace                                                            //
-// [ctrl+j] Go down in search workspace, suggestion, terminal pane or quick open        //
-// [ctrl+k] Go up in search workspace, suggestion, terminal pane or quick open          //
+// [ctrl+j] Go down in search page, suggestion or quick open                            //
+// [ctrl+k] Go up in search page, suggestion or quick open                              //
 // [ctrl+n] Create Editor                                                               //
 // [ctrl+w] Close Editor                                                                //
 // [ctrl+g] Search and Replace                                                          //
@@ -54,7 +54,7 @@
   // [ctrl+k] Editor: Open Keyboard Cheat Sheet                                         //
   // ================================================================================== //
   {
-    "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
+    "context": "!multibuffer",
     "bindings": {
       "ctrl-k": "zed::OpenKeymapFile"
     }
@@ -120,6 +120,24 @@
     "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
     "bindings": {
       "ctrl-f": "pane::DeploySearch"
+    }
+  },
+  // ================================================================================== //
+  // [ctrl+j] Go down in search page, suggestion or quick open                          //
+  // ================================================================================== //
+  {
+    "context": "multibuffer",
+    "bindings": {
+      "ctrl-j": "search::SelectNextMatch"
+    }
+  },
+  // ================================================================================== //
+  // [ctrl+k] Go up in search page, suggestion or quick open                            //
+  // ================================================================================== //
+  {
+    "context": "multibuffer",
+    "bindings": {
+      "ctrl-k": "search::SelectPreviousMatch"
     }
   }
 ]
