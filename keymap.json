@@ -6,7 +6,7 @@
 // [ctrl+h] Previous Tab on Editor                                                      //
 // [ctrl+l] Next Tab on Editor                                                          //
 // [ctrl+s] Save File                                                                   //
-// [ctrl+q] Close all Editors or Open Folder                                            //
+// [ctrl+q] Close all Editors                                                           //
 // [ctrl+b] Copy Relative Path                                                          //
 // [ctrl+f] Search Workspace                                                            //
 // [ctrl+j] Go down in search workspace, suggestion, terminal pane or quick open        //
@@ -31,6 +31,7 @@
   // [ctrl+shift+\] View: Hide Editor Tabs                                              //
   // ================================================================================== //
   {
+    "context": "Workspace",
     "bindings": {
       "ctrl-|": "editor::ToggleTabBar"
     }
@@ -84,6 +85,15 @@
     "context": "Workspace",
     "bindings": {
       "ctrl-s": "workspace::Save"
+    }
+  },
+  // ================================================================================== //
+  // [ctrl+q] Close all Editors                                                         //
+  // ================================================================================== //
+  {
+    "context": "((vim_mode == normal || vim_mode == visual) || vim_mode == operator)",
+    "bindings": {
+      "ctrl-q": "pane::CloseAllItems"
     }
   }
 ]
