@@ -108,7 +108,6 @@
   // [ctrl+p] Search Project                                                            //
   // ================================================================================== //
   {
-    "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
     "bindings": {
       "ctrl-p": "file_finder::Toggle"
     }
