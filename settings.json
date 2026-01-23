@@ -75,5 +75,9 @@
   },
   "indent_guides": {
     "enabled": false,
+  },
+  "gutter": {
+    "breakpoints": false,
+    "folds": false
   }
 }
