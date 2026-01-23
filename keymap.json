@@ -2,7 +2,7 @@
 //                                                                                      //
 // [ctrl+shift+\] View: Hide Editor Tabs                                                //
 // [ctrl+\] Open Explorer                                                               //--
-// [ctrl+k] Editor: Open Keyboard Cheat Sheet                                           //
+// [ctrl+k] Editor: Open Keyboard Cheat Sheet                                           //--
 // [ctrl+h] Previous Tab on Editor                                                      //--
 // [ctrl+l] Next Tab on Editor                                                          //--
 // [ctrl+z] Toggle Full Screen Terminal                                                 //
@@ -44,14 +44,17 @@
     }
   },
   // ================================================================================== //
-  // [ctrl+h] Previous Tab on Editor                                                    //
+  // [ctrl+k] Editor: Open Keyboard Cheat Sheet                                         //
   // ================================================================================== //
   {
-    "context": "(!Editor && !Terminal)",
+    "context": "((vim_mode == normal || vim_mode == visual) || vim_mode == operator)",
     "bindings": {
-      "ctrl-h": "pane::ActivatePreviousItem"
+      "ctrl-k": "zed::OpenKeymapFile"
     }
   },
+  // ================================================================================== //
+  // [ctrl+h] Previous Tab on Editor                                                    //
+  // ================================================================================== //
   {
     "context": "((vim_mode == normal || vim_mode == visual) || vim_mode == operator)",
     "bindings": {
@@ -61,12 +64,6 @@
   // ================================================================================== //
   // [ctrl+l] Next Tab on Editor                                                        //
   // ================================================================================== //
-  {
-    "context": "(!Editor && !Terminal)",
-    "bindings": {
-      "ctrl-l": "pane::ActivateNextItem"
-    }
-  },
   {
     "context": "((vim_mode == normal || vim_mode == visual) || vim_mode == operator)",
     "bindings": {
