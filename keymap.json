@@ -112,5 +112,14 @@
     "bindings": {
       "ctrl-p": "file_finder::Toggle"
     }
+  },
+  // ================================================================================== //
+  // [ctrl+f] Search Workspace                                                          //
+  // ================================================================================== //
+  {
+    "context": "((vim_mode == normal || vim_mode == visual) || vim_mode == operator)",
+    "bindings": {
+      "ctrl-f": "pane::DeploySearch"
+    }
   }
 ]
