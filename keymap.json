@@ -23,6 +23,13 @@
 // [r] File Explorer: Rename File                                                       //
 // [d] File Explorer: Delete File                                                       //
 // [w] File Explorer: Remove Folder from Workspace                                      //
+// [<space> r] Reverse order of all lines                                               //
+// [<space> i] Show tooltip hover message                                               //
+// [<space> s a] Sort lines: Ascending                                                  //
+// [<space> s d] Sort lines: Descending                                                 //
+// [<space> t s] Toggle settings: Status Wrap                                           //
+// [<space> t w] Toggle settings: Text Wrap                                             //
+// [<space> t l] Toggle settings: Hidden Characters                                     //
 //                                                                                      //
 // ==================================================================================== //
 [
@@ -242,12 +249,30 @@
     }
   },
   // ================================================================================== //
-  // [w] File Explorer: Remove Folder from Workspace                                      //
+  // [w] File Explorer: Remove Folder from Workspace                                    //
   // ================================================================================== //
   {
     "context": "ProjectPanel && !editing",
     "bindings": {
       "w": "project_panel::Delete"
     }
-  }
+  },
+  // ================================================================================== //
+  // [<space> r] Reverse order of all lines                                             //
+  // ================================================================================== //
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "space r": "editor::ReverseLines"
+    }
+  },
+  // ================================================================================== //
+  // [<space> i] Show tooltip hover message                                             //
+  // ================================================================================== //
+  {
+    "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
+    "bindings": {
+      "space i": "editor::Hover"
+    }
+  },
 ]
