@@ -1,11 +1,10 @@
 // ================================== LIST OF KEYS ==================================== //
 //                                                                                      //
 // [ctrl+shift+\] View: Hide Editor Tabs                                                //
-// [ctrl+\] Open Explorer                                                               //--
-// [ctrl+k] Editor: Open Keyboard Cheat Sheet                                           //--
-// [ctrl+h] Previous Tab on Editor                                                      //--
-// [ctrl+l] Next Tab on Editor                                                          //--
-// [ctrl+z] Toggle Full Screen Terminal                                                 //
+// [ctrl+\] Open Explorer                                                               //
+// [ctrl+k] Editor: Open Keyboard Cheat Sheet                                           //
+// [ctrl+h] Previous Tab on Editor                                                      //
+// [ctrl+l] Next Tab on Editor                                                          //
 // [ctrl+s] Save File                                                                   //
 // [ctrl+q] Close all Editors or Open Folder                                            //
 // [ctrl+b] Copy Relative Path                                                          //
