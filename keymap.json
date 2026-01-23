@@ -10,8 +10,8 @@
 // [ctrl+b] Copy Relative Path                                                          //
 // [ctrl+p] Search Project                                                              //
 // [ctrl+f] Search Workspace                                                            //
-// [ctrl+j] Go down in search page, suggestion or quick open                            //
-// [ctrl+k] Go up in search page, suggestion or quick open                              //
+// [ctrl+j] Go down in search page, command palette or file finder                      //
+// [ctrl+k] Go up in search page, command palette or file finder                        //
 // [ctrl+n] Create Editor                                                               //
 // [ctrl+w] Close Editor                                                                //
 // [ctrl+g] Search and Replace                                                          //
@@ -123,7 +123,7 @@
     }
   },
   // ================================================================================== //
-  // [ctrl+j] Go down in search page, suggestion or quick open                          //
+  // [ctrl+j] Go down in search page, command palette or file finder                    //
   // ================================================================================== //
   {
     "context": "multibuffer",
@@ -131,13 +131,25 @@
       "ctrl-j": "search::SelectNextMatch"
     }
   },
+  {
+    "context": "Picker > Editor",
+    "bindings": {
+      "ctrl-j": "menu::SelectNext"
+    }
+  },
   // ================================================================================== //
-  // [ctrl+k] Go up in search page, suggestion or quick open                            //
+  // [ctrl+k] Go up in search page, command palette or file finder                      //
   // ================================================================================== //
   {
     "context": "multibuffer",
     "bindings": {
       "ctrl-k": "search::SelectPreviousMatch"
+    }
+  },
+  {
+    "context": "Picker > Editor",
+    "bindings": {
+      "ctrl-k": "menu::SelectPrevious"
     }
   }
 ]
