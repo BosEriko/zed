@@ -83,5 +83,8 @@
   },
   "session": {
     "trust_all_worktrees": true
-  }
+  },
+  "scroll_beyond_last_line": "off",
+  "show_wrap_guides": true,
+  "wrap_guides": [100, 150]
 }
