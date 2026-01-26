@@ -89,6 +89,9 @@
   "wrap_guides": [100, 150],
   "restore_on_startup": "none",
   "experimental.theme_overrides": {
-    "editor.wrap_guide": "#15141F"
+    "editor.wrap_guide": "#15141F",
+    "tab.active_background": "#121117",
+    "tab.inactive_background": "#15141F",
+    "tab_bar.background": "#15141F"
   }
 }
