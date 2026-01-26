@@ -15,3 +15,10 @@ git clone https://github.com/BosEriko/zed.git ~/.config/zed
 ## Install the Extensions
 1. [Aura Theme](https://zed.dev/extensions/aura-theme)
 2. [Charmed Icons](https://zed.dev/extensions/charmed-icons)
+
+## Enable Repeated Keys (macOS)
+Enable repeated keys to avoid pop up on key hold with the following:
+```sh
+defaults write -g ApplePressAndHoldEnabled -bool false
+```
+*Note: Restart to make it take effect*
