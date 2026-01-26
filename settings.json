@@ -78,6 +78,10 @@
   },
   "gutter": {
     "breakpoints": false,
-    "folds": false
+    "folds": false,
+    "min_line_number_digits": 0
+  },
+  "session": {
+    "trust_all_worktrees": true
   }
 }
