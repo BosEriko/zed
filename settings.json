@@ -87,5 +87,8 @@
   "scroll_beyond_last_line": "off",
   "show_wrap_guides": true,
   "wrap_guides": [100, 150],
-  "restore_on_startup": "none"
+  "restore_on_startup": "none",
+  "experimental.theme_overrides": {
+    "editor.wrap_guide": "#15141F"
+  }
 }
