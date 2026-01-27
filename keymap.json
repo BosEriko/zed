@@ -179,7 +179,6 @@
   // [ctrl+w] Close Editor                                                              //
   // ================================================================================== //
   {
-    "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
     "bindings": {
       "ctrl-w": "pane::CloseActiveItem"
     }
