@@ -71,7 +71,7 @@
   "relative_line_numbers": "enabled",
   "disable_ai": true,
   "scrollbar": {
-    "show": "never"
+    "show": "never",
   },
   "indent_guides": {
     "enabled": false,
@@ -79,10 +79,10 @@
   "gutter": {
     "breakpoints": false,
     "folds": false,
-    "min_line_number_digits": 0
+    "min_line_number_digits": 0,
   },
   "session": {
-    "trust_all_worktrees": true
+    "trust_all_worktrees": true,
   },
   "scroll_beyond_last_line": "off",
   "show_wrap_guides": true,
@@ -93,6 +93,7 @@
     "editor.wrap_guide": "#15141F",
     "tab.active_background": "#121117",
     "tab.inactive_background": "#15141F",
-    "tab_bar.background": "#15141F"
-  }
+    "tab_bar.background": "#15141F",
+  },
+  "inline_code_actions": false,
 }
