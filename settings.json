@@ -97,4 +97,5 @@
   },
   "inline_code_actions": false,
   "when_closing_with_no_tabs": "keep_window_open",
+  "hover_popover_enabled": false,
 }
