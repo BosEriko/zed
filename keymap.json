@@ -154,15 +154,9 @@
     },
   },
   {
-    "context": "Editor",
+    "context": "Editor && (showing_code_actions || showing_completions)",
     "bindings": {
       "ctrl-j": "editor::ContextMenuNext",
-    },
-  },
-  {
-    "context": "Editor && !(showing_code_actions || showing_completions)",
-    "bindings": {
-      "ctrl-j": "editor::JoinLines",
     },
   },
   // ================================================================================== //
