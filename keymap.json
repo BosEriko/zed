@@ -13,6 +13,8 @@
 // [ctrl+g] Search Workspace: Toggle Replace                                            //
 // [ctrl+j] Go down in search page, command palette or file finder                      //
 // [ctrl+k] Go up in search page, command palette or file finder                        //
+// [ctrl+shift+j] Multicursor: Select Next                                              //
+// [ctrl+shift+k] Multicursor: Select Previous                                          //
 // [ctrl+n] Create Editor                                                               //
 // [ctrl+w] Close Editor                                                                //
 // [ctrl+c] Toggle Comment                                                              //
@@ -38,8 +40,8 @@
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-|": "editor::ToggleTabBar"
-    }
+      "ctrl-|": "editor::ToggleTabBar",
+    },
   },
   // ================================================================================== //
   // [ctrl+\] Open Explorer                                                             //
@@ -47,14 +49,14 @@
   {
     "context": "!Editor && !Terminal && !Search",
     "bindings": {
-      "ctrl-\\": "workspace::ToggleRightDock"
-    }
+      "ctrl-\\": "workspace::ToggleRightDock",
+    },
   },
   {
     "context": "Editor || Terminal || Search",
     "bindings": {
-      "ctrl-\\": "project_panel::ToggleFocus"
-    }
+      "ctrl-\\": "project_panel::ToggleFocus",
+    },
   },
   // ================================================================================== //
   // [ctrl+k] Editor: Open Keyboard Cheat Sheet                                         //
@@ -62,8 +64,8 @@
   {
     "context": "!multibuffer",
     "bindings": {
-      "ctrl-k": "zed::OpenKeymapFile"
-    }
+      "ctrl-k": "zed::OpenKeymapFile",
+    },
   },
   // ================================================================================== //
   // [ctrl+h] Previous Tab on Editor                                                    //
@@ -71,8 +73,8 @@
   {
     "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
     "bindings": {
-      "ctrl-h": "pane::ActivatePreviousItem"
-    }
+      "ctrl-h": "pane::ActivatePreviousItem",
+    },
   },
   // ================================================================================== //
   // [ctrl+l] Next Tab on Editor                                                        //
@@ -80,8 +82,8 @@
   {
     "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
     "bindings": {
-      "ctrl-l": "pane::ActivateNextItem"
-    }
+      "ctrl-l": "pane::ActivateNextItem",
+    },
   },
   // ================================================================================== //
   // [ctrl+s] Save File                                                                 //
@@ -89,8 +91,8 @@
   {
     "context": "Workspace",
     "bindings": {
-      "ctrl-s": "workspace::Save"
-    }
+      "ctrl-s": "workspace::Save",
+    },
   },
   // ================================================================================== //
   // [ctrl+q] Close all Editors                                                         //
@@ -98,8 +100,8 @@
   {
     "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
     "bindings": {
-      "ctrl-q": "pane::CloseAllItems"
-    }
+      "ctrl-q": "pane::CloseAllItems",
+    },
   },
   // ================================================================================== //
   // [ctrl+b] Copy Relative Path                                                        //
@@ -107,16 +109,16 @@
   {
     "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
     "bindings": {
-      "ctrl-b": "editor::CopyRelativePath"
-    }
+      "ctrl-b": "workspace::CopyRelativePath",
+    },
   },
   // ================================================================================== //
   // [ctrl+p] Search Project                                                            //
   // ================================================================================== //
   {
     "bindings": {
-      "ctrl-p": "file_finder::Toggle"
-    }
+      "ctrl-p": "file_finder::Toggle",
+    },
   },
   // ================================================================================== //
   // [ctrl+f] Search Workspace                                                          //
@@ -124,8 +126,8 @@
   {
     "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
     "bindings": {
-      "ctrl-f": "pane::DeploySearch"
-    }
+      "ctrl-f": "pane::DeploySearch",
+    },
   },
   // ================================================================================== //
   // [ctrl+g] Search Workspace: Toggle Replace                                          //
@@ -133,8 +135,8 @@
   {
     "context": "multibuffer || ProjectSearchBar",
     "bindings": {
-      "ctrl-g": "search::ToggleReplace"
-    }
+      "ctrl-g": "search::ToggleReplace",
+    },
   },
   // ================================================================================== //
   // [ctrl+j] Go down in search page, command palette or file finder                    //
@@ -142,14 +144,14 @@
   {
     "context": "multibuffer",
     "bindings": {
-      "ctrl-j": "search::SelectNextMatch"
-    }
+      "ctrl-j": "search::SelectNextMatch",
+    },
   },
   {
     "context": "Picker > Editor",
     "bindings": {
-      "ctrl-j": "menu::SelectNext"
-    }
+      "ctrl-j": "menu::SelectNext",
+    },
   },
   // ================================================================================== //
   // [ctrl+k] Go up in search page, command palette or file finder                      //
@@ -157,14 +159,32 @@
   {
     "context": "multibuffer",
     "bindings": {
-      "ctrl-k": "search::SelectPreviousMatch"
-    }
+      "ctrl-k": "search::SelectPreviousMatch",
+    },
   },
   {
     "context": "Picker > Editor",
     "bindings": {
-      "ctrl-k": "menu::SelectPrevious"
-    }
+      "ctrl-k": "menu::SelectPrevious",
+    },
+  },
+  // ================================================================================== //
+  // [ctrl+shift+j] Multicursor: Select Next                                            //
+  // ================================================================================== //
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-shift-j": "editor::SelectNext",
+    },
+  },
+  // ================================================================================== //
+  // [ctrl+shift+k] Multicursor: Select Previous                                        //
+  // ================================================================================== //
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-shift-k": "editor::SelectPrevious",
+    },
   },
   // ================================================================================== //
   // [ctrl+n] Create Editor                                                             //
@@ -172,16 +192,16 @@
   {
     "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
     "bindings": {
-      "ctrl-n": "workspace::NewFile"
-    }
+      "ctrl-n": "workspace::NewFile",
+    },
   },
   // ================================================================================== //
   // [ctrl+w] Close Editor                                                              //
   // ================================================================================== //
   {
     "bindings": {
-      "ctrl-w": "pane::CloseActiveItem"
-    }
+      "ctrl-w": "pane::CloseActiveItem",
+    },
   },
   // ================================================================================== //
   // [ctrl+c] Toggle Comment                                                            //
@@ -189,8 +209,8 @@
   {
     "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
     "bindings": {
-      "ctrl-c": "editor::ToggleComments"
-    }
+      "ctrl-c": "editor::ToggleComments",
+    },
   },
   // ================================================================================== //
   // [a] File Explorer: Create File                                                     //
@@ -198,8 +218,8 @@
   {
     "context": "ProjectPanel && not_editing",
     "bindings": {
-      "a": "project_panel::NewFile"
-    }
+      "a": "project_panel::NewFile",
+    },
   },
   // ================================================================================== //
   // [y] File Explorer: Copy File                                                       //
@@ -207,8 +227,8 @@
   {
     "context": "ProjectPanel && not_editing",
     "bindings": {
-      "y": "project_panel::Copy"
-    }
+      "y": "project_panel::Copy",
+    },
   },
   // ================================================================================== //
   // [m] File Explorer: Move File                                                       //
@@ -216,8 +236,8 @@
   {
     "context": "ProjectPanel && not_editing",
     "bindings": {
-      "m": "project_panel::Cut"
-    }
+      "m": "project_panel::Cut",
+    },
   },
   // ================================================================================== //
   // [p] File Explorer: Paste File                                                      //
@@ -225,8 +245,8 @@
   {
     "context": "ProjectPanel && not_editing",
     "bindings": {
-      "p": "project_panel::Paste"
-    }
+      "p": "project_panel::Paste",
+    },
   },
   // ================================================================================== //
   // [r] File Explorer: Rename File                                                     //
@@ -234,8 +254,8 @@
   {
     "context": "ProjectPanel && not_editing",
     "bindings": {
-      "r": "project_panel::Rename"
-    }
+      "r": "project_panel::Rename",
+    },
   },
   // ================================================================================== //
   // [d] File Explorer: Delete File                                                     //
@@ -243,8 +263,8 @@
   {
     "context": "ProjectPanel && not_editing",
     "bindings": {
-      "d": "project_panel::Delete"
-    }
+      "d": "project_panel::Delete",
+    },
   },
   // ================================================================================== //
   // [w] File Explorer: Remove Folder from Workspace                                    //
@@ -252,8 +272,8 @@
   {
     "context": "ProjectPanel && not_editing",
     "bindings": {
-      "w": "project_panel::Delete"
-    }
+      "w": "project_panel::Delete",
+    },
   },
   // ================================================================================== //
   // [<space> r] Reverse order of all lines                                             //
@@ -261,8 +281,8 @@
   {
     "context": "vim_mode == visual",
     "bindings": {
-      "space r": "editor::ReverseLines"
-    }
+      "space r": "editor::ReverseLines",
+    },
   },
   // ================================================================================== //
   // [<space> i] Show tooltip hover message                                             //
@@ -270,8 +290,8 @@
   {
     "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
     "bindings": {
-      "space i": "editor::Hover"
-    }
+      "space i": "editor::Hover",
+    },
   },
   // ================================================================================== //
   // [<space> s a] Sort lines: Ascending                                                //
@@ -279,8 +299,11 @@
   {
     "context": "vim_mode == visual",
     "bindings": {
-      "space s a": ["workspace::SendKeystrokes", ": !sort space - n space - k space 2 enter"]
-    }
+      "space s a": [
+        "workspace::SendKeystrokes",
+        ": !sort space - n space - k space 2 enter",
+      ],
+    },
   },
   // ================================================================================== //
   // [<space> s d] Sort lines: Descending                                               //
@@ -288,8 +311,11 @@
   {
     "context": "vim_mode == visual",
     "bindings": {
-      "space s d": ["workspace::SendKeystrokes", ": !sort space - nr space - k space 2 enter"]
-    }
+      "space s d": [
+        "workspace::SendKeystrokes",
+        ": !sort space - nr space - k space 2 enter",
+      ],
+    },
   },
   // ================================================================================== //
   // [<space> t w] Toggle settings: Text Wrap                                           //
@@ -297,15 +323,15 @@
   {
     "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
     "bindings": {
-      "space t w": "editor::ToggleSoftWrap"
-    }
+      "space t w": "editor::ToggleSoftWrap",
+    },
   },
   // ================================================================================== //
   // [<space> d c] dev: open key context view                                           //
   // ================================================================================== //
   {
     "bindings": {
-      "space d c": "dev::OpenKeyContextView"
-    }
-  }
+      "space d c": "dev::OpenKeyContextView",
+    },
+  },
 ]
