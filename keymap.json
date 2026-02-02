@@ -62,7 +62,7 @@
   // [ctrl+k] Editor: Open Keyboard Cheat Sheet                                         //
   // ================================================================================== //
   {
-    "context": "!multibuffer",
+    "context": "!multibuffer && !(showing_code_actions || showing_completions)",
     "bindings": {
       "ctrl-k": "zed::OpenKeymapFile",
     },
@@ -153,6 +153,18 @@
       "ctrl-j": "menu::SelectNext",
     },
   },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-j": "editor::ContextMenuNext",
+    },
+  },
+  {
+    "context": "Editor && !(showing_code_actions || showing_completions)",
+    "bindings": {
+      "ctrl-j": "editor::JoinLines",
+    },
+  },
   // ================================================================================== //
   // [ctrl+k] Go up in search page, command palette or file finder                      //
   // ================================================================================== //
@@ -166,6 +178,12 @@
     "context": "Picker > Editor",
     "bindings": {
       "ctrl-k": "menu::SelectPrevious",
+    },
+  },
+  {
+    "context": "Editor && (showing_code_actions || showing_completions)",
+    "bindings": {
+      "ctrl-k": "editor::ContextMenuPrevious",
     },
   },
   // ================================================================================== //
