@@ -27,6 +27,7 @@
 // [w] File Explorer: Remove Folder from Workspace                                      //
 // [<space> r] Reverse order of all lines                                               //
 // [<space> i] Show tooltip hover message                                               //
+// [<space> c t] Close toast popup                                                      //
 // [<space> s a] Sort lines: Ascending                                                  //
 // [<space> s d] Sort lines: Descending                                                 //
 // [<space> t w] Toggle settings: Text Wrap                                             //
@@ -303,6 +304,14 @@
     "context": "vim_mode == normal || vim_mode == visual || vim_mode == operator",
     "bindings": {
       "space i": "editor::Hover",
+    },
+  },
+  // ================================================================================== //
+  // [<space> c t] Close toast popup                                                    //
+  // ================================================================================== //
+  {
+    "bindings": {
+      "space c t": "menu::Cancel",
     },
   },
   // ================================================================================== //
