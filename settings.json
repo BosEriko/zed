@@ -100,4 +100,5 @@
   "hover_popover_enabled": false,
   "auto_update": false,
   "extend_comment_on_newline": false,
+  "lsp_document_colors": "none",
 }
