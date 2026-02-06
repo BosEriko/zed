@@ -25,9 +25,9 @@
 // [r] File Explorer: Rename File                                                       //
 // [d] File Explorer: Delete File                                                       //
 // [w] File Explorer: Remove Folder from Workspace                                      //
-// [<space> r] Reverse order of all lines                                               //
 // [<space> i] Show tooltip hover message                                               //
 // [<space> c t] Close toast popup                                                      //
+// [<space> s r] Reverse order of all lines                                             //
 // [<space> s a] Sort lines: Ascending                                                  //
 // [<space> s d] Sort lines: Descending                                                 //
 // [<space> t w] Toggle settings: Text Wrap                                             //
@@ -289,15 +289,6 @@
     },
   },
   // ================================================================================== //
-  // [<space> r] Reverse order of all lines                                             //
-  // ================================================================================== //
-  {
-    "context": "vim_mode == visual",
-    "bindings": {
-      "space r": "editor::ReverseLines",
-    },
-  },
-  // ================================================================================== //
   // [<space> i] Show tooltip hover message                                             //
   // ================================================================================== //
   {
@@ -312,6 +303,15 @@
   {
     "bindings": {
       "space c t": "menu::Cancel",
+    },
+  },
+  // ================================================================================== //
+  // [<space> s r] Sort lines: Reverse                                                  //
+  // ================================================================================== //
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "space s r": "editor::ReverseLines",
     },
   },
   // ================================================================================== //
