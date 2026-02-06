@@ -27,7 +27,7 @@
 // [w] File Explorer: Remove Folder from Workspace                                      //
 // [<space> i] Show tooltip hover message                                               //
 // [<space> c t] Close toast popup                                                      //
-// [<space> s r] Reverse order of all lines                                             //
+// [<space> s r] Sort lines: Reverse                                                    //
 // [<space> s a] Sort lines: Ascending                                                  //
 // [<space> s d] Sort lines: Descending                                                 //
 // [<space> t w] Toggle settings: Text Wrap                                             //
